@@ -44,7 +44,7 @@ Usage
         }
 
         int color = Color.argb(255, mRandomizer.nextInt(256), mRandomizer.nextInt(256), mRandomizer.nextInt(256));
-        ((FlabbyLayout)convertView).setFlabbyColor(color);
+        ((AnimationLayout)convertView).setFlabbyColor(color);
         holder.text.setText(getItem(position));
         return convertView;
     }
