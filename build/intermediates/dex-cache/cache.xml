@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/pattronize/Desktop/Music Player/Animation List View/example/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/pattronize/Desktop/Music Player/Animation List View/example/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a47cf31f8ae46de3e06f717a8e4665030eee7677/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/pattronize/Desktop/Music Player/Animation List View/example/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c7f42779e79301978146124a3bc8c0c8f53478c9">
+        <dex dex="/home/pattronize/Desktop/Music Player/Animation List View/example/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8c8602d54fa6954fd7b1943de60b380f7e074468/classes.dex" />
+    </item>
+
+</items>
