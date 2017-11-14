@@ -2,7 +2,7 @@
 Usage
 -----
 
-1.Place the `FlabbyListView` on your layout:
+1.Place the `AnimationListView` on your layout:
 
 ```xml
     <com.chinnadurai.android.animation.lib.AnimationListView
@@ -13,7 +13,7 @@ Usage
         android:layout_height="match_parent"/>
 ```
 
-2.Populate it with items which xml layout is wrap by a `FlabbyLayout`:
+2.Populate it with items which xml layout is wrap by a `AnimationLayout`:
 
 
 ```xml
@@ -29,7 +29,7 @@ Usage
 
     </AnimationLayout>
 ```
-3.Set the color of each item. It needs to be set on the getView method of your adapter calling `setFlabbyColor` from `FlabbyLayout`:
+3.Set the color of each item. It needs to be set on the getView method of your adapter calling `setAnimationLayoutColor` from `AnimationLayout`:
 
 ```java
     @Override
