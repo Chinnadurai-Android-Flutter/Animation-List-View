@@ -1,4 +1,4 @@
-<com.chinnadurai.android.animation.lib.FlabbyListView
+<com.chinnadurai.android.animation.lib.AnimationListView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/list"
     android:layout_width="match_parent"

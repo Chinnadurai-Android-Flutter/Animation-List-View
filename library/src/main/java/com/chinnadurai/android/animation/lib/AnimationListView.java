@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
 
-public class FlabbyListView extends ListView {
-    private static final String TAG = FlabbyListView.class.getSimpleName();
+public class AnimationListView extends ListView {
+    private static final String TAG = AnimationListView.class.getSimpleName();
     private static final float PIXELS_SCROLL_TO_CANCEL_EXPANSION=100;
     private View mTrackedChild;
-    private FlabbyLayout mDownView;
-    private FlabbyLayout mDownBelowView;
+    private AnimationLayout mDownView;
+    private AnimationLayout mDownBelowView;
     private Rect mRect = new Rect();
     private int[] mListViewCoords;
     private int mChildCount;
@@ -23,17 +23,17 @@ public class FlabbyListView extends ListView {
     private float mDownXValue;
     private float mDownYValue;
 
-    public FlabbyListView(Context context) {
+    public AnimationListView(Context context) {
         super(context);
         init(context);
     }
 
-    public FlabbyListView(Context context, AttributeSet attrs) {
+    public AnimationListView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
 
-    public FlabbyListView(Context context, AttributeSet attrs, int defStyle) {
+    public AnimationListView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(context);
     }
@@ -155,16 +155,16 @@ public class FlabbyListView extends ListView {
         getLocationOnScreen(mListViewCoords);
         int x = (int) event.getRawX() - mListViewCoords[0];
         int y = (int) event.getRawY() - mListViewCoords[1];
-        FlabbyLayout child;
+        AnimationLayout child;
         for (int i = 0; i < mChildCount; i++) {
-            child = (FlabbyLayout) getChildAt(i);
+            child = (AnimationLayout) getChildAt(i);
             child.getHitRect(mRect);
             if (mRect.contains(x, y)) {
                 mDownView = child;
                 if(mDownView!=null) {
                     mDownView.setAsSelected(true);
                 }
-                mDownBelowView = (FlabbyLayout) getChildAt(i + 1);
+                mDownBelowView = (AnimationLayout) getChildAt(i + 1);
             } else {
                 child.setAsSelected(false);
             }
@@ -187,11 +187,11 @@ public class FlabbyListView extends ListView {
 
     private void updateChildrenControlPoints(float deltaY) {
         View child;
-        FlabbyLayout flabbyChild;
+        AnimationLayout flabbyChild;
         for (int i = 0; i <= getLastVisiblePosition() - getFirstVisiblePosition(); i++) {
             child = getChildAt(i);
-            if (child instanceof FlabbyLayout) {
-                flabbyChild = (FlabbyLayout) child;
+            if (child instanceof AnimationLayout) {
+                flabbyChild = (AnimationLayout) child;
                 if (child != null) {
                     flabbyChild.updateControlPoints(deltaY);
                 }
